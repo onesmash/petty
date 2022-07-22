@@ -3,7 +3,11 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "animation": "*"
+        "animation": "*",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#10013ca1dcba54156faf7f4fefff9bc8db24ff26",
+        "arcade-block-objects": "github:microsoft/arcade-block-objects#f486ac1d4dcc096b9297174f97f8cdef1576c7ff"
     },
     "files": [
         "main.blocks",
