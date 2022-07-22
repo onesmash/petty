@@ -1,14 +1,16 @@
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (myMenu) {
+    if (isMenuVisiable) {
         myMenu.close()
-        myMenu = null
+        isMenuVisiable = false
     } else {
         myMenu = miniMenu.createMenu(
-        miniMenu.createMenuItem("abc"),
-        miniMenu.createMenuItem("abc")
+        miniMenu.createMenuItem("喂食"),
+        miniMenu.createMenuItem("洗澡")
         )
+        isMenuVisiable = true
     }
 })
+let isMenuVisiable = false
 let myMenu: miniMenu.MenuSprite = null
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
